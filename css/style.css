@@ -1,0 +1,387 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+.main-header {
+    background: #293449;
+    min-height: 43px;
+}
+.upper-header {
+    min-height: 50px;
+    background: #f3f7f9;
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.main-header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+.logo {
+    float: left;
+    width:220px;
+    margin-right: 10px;
+}
+.logo a {
+    font-size: 19px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #ee3643;
+    box-shadow: #b52933 0 5px 0 0;
+}
+.logo a:hover {
+    background: #b52933;
+}
+.search {
+    float: left;
+    width:220px;
+    margin-right: 10px;
+    padding-top: 12px;
+    position: relative;
+}
+.input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-left: 30px;
+    color: #fff;
+    font-size: 17px;
+}
+.input::-webkit-input-placeholder {
+    color: #fff;
+}
+.input:focus {
+    outline: none;
+}
+.search label:before {
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left:0;
+    top:12px;
+    background: url('../img/search-icon.png');
+}
+.bookmark {
+    float: left;
+    width: 160px;
+    margin-right: 10px;
+    position: relative;
+    padding-top: 12px;
+}
+.bookmark a:before {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left:0;
+    top:12px;
+    background: url('../img/bookmark-icon.png');
+}
+.bookmark a {
+    padding-left: 30px;
+}
+.cart {
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    position: relative;
+    padding-top: 12px;
+}
+.cart a:before {
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left:0;
+    top:12px;
+    background: url('../img/cart-icon.png');
+}
+.cart a {
+    padding-left: 30px;
+}
+.order {
+    float: left;
+    width: 150px;
+}
+.order a {
+    display: block;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background: #63a63e;
+}
+.order a:hover {
+    background: #fff;
+    color: #63a63e;
+}
+
+/*upper-header*/
+
+.description{
+    float: left;
+    width:300px;
+    margin-right: 60px;
+}
+.description p{
+    color: #ee3643;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0 auto;
+    padding-left: 52px;
+    line-height: 1.7;
+}
+.contact-details{
+    float: left;
+    width:320px;
+    margin-right: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.phone {
+  position: relative;
+  padding: 8px 47px 10px 76px;
+
+  font-size: 21px;
+  line-height: 18px;
+  color: #fb463c;
+
+  border: 3px solid #ffffff;
+}
+
+.phone::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 16px;
+  top: 10px;
+  width: 19px;
+  height: 19px;
+
+  background-image: url(../img/phone-icon.png);
+  background-repeat: no-repeat;
+}
+
+
+
+.adress{
+    margin-top: 40px;
+    color: #32425c;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.authorization {
+  margin-left: 71px;
+}
+
+.btn {
+  padding-top: 14px;
+  padding-bottom: 15px;
+
+  font-size: 21px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.btn--login {
+  position: relative;
+  min-width: 110px;
+  padding-left: 28px;
+}
+
+.btn--login::before {
+  content: "";
+  position: absolute;
+  left: 13px;
+  top: 14px;
+  width: 20px;
+  height: 17px;
+  opacity: 0.3;
+
+  background-image: url(../img/icon-login.png);
+  background-repeat: no-repeat;
+}
+
+.btn:hover {
+  color: #ee3643;
+}
+
+
+/*Навигация*/
+
+.main-menu {
+  padding: 0 26px 0 25px;
+  margin: auto;
+  margin-top: 25px;
+  width: 940px;
+  font-weight: 400;
+  line-height: 17px;
+  background-color: #32425c;
+}
+
+.main-menu a {
+  display: inline-block;
+  padding: 20px 30px 23px 26px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background-color: #293449;
+}
+
+.main-menu a:active {
+  background-color: #1d2739;
+  opacity: 0.3;
+}
+
+/*Слайдер и вокруг слайдера*/
+
+.sm-padding {
+    padding: 60px 0;
+}
+.offer-item {
+    float: left;
+    overflow: hidden;
+    width:300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-height: 125px;
+    background: #000;
+    position: relative;
+}
+.mr-0 {
+    margin-right: 0;
+}
+.offer-item h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+}
+.offer-item a {
+    display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+    padding: 12px 15px;
+    background: rgba(0,0,0,.1);
+    color: #fff;
+    text-decoration: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.offer-item:last-child {
+    margin-right: 0;
+}
+.offer-item-slider {
+    width:620px;
+    min-height: 265px;
+    float: left;
+    margin-right: 20px;
+    background: #ffbf47;
+}
+.material {
+    background: #ffbf47;
+}
+.material:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 42px;
+    top: 35px;
+    width:44px;
+    height:65px;
+    background: url('../img/material-icon.png') no-repeat;
+}
+.tool {
+    background: #3bbce3;
+}
+.tool:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 31px;
+    top: 35px;
+    width:78px;
+    height:64px;
+    background: url('../img/tool.png') no-repeat;
+}
+.machine {
+    background: #dc91d8;
+}
+.machine:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 31px;
+    top: 35px;
+    width:80px;
+    height:70px;
+    background: url('../img/machine-icon.png') no-repeat;
+}
+.korzina{
+    background: #8ed78f;
+}
+.korzina:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 31px;
+    top: 35px;
+    width:80px;
+    height:70px;
+    background: url('../img/korzina-icon.png') no-repeat;
+}
+.dostavka{
+    background: #ffc047;
+}
+.dostavka:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 31px;
+    top: 35px;
+    width:80px;
+    height:70px;
+    background: url('../img/machine2-icon.png') no-repeat;
+}
+.new-caption:after {
+    content: 'new';
+    display: block;
+    width: 115px;
+    height: 30px;
+    position: absolute;
+    top: 12px;
+    right: -31px;
+    background: red;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    transform: rotate(45deg);
+}
+border: transparent transparent transparent #f00;
